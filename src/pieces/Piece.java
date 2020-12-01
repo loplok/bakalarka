@@ -7,8 +7,6 @@ public class Piece {
     protected PlayerAlliance pieceAlliance;
     private final boolean isFirstMove;
 
-
-
     public Piece(int piecePosition, PlayerAlliance pieceAlliance, boolean isFirstMove) {
         this.piecePosition = piecePosition;
         this.pieceAlliance = pieceAlliance;
