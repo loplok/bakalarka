@@ -1,4 +1,5 @@
 package board.player;
 
-public class BlackPlayer {
+public class BlackPlayer extends Player{
+
 }
