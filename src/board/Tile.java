@@ -40,7 +40,6 @@ public abstract class Tile {
     public abstract Piece getPiece();
 
 
-
     public static final class OccupiedTile extends Tile{
 
         private final Piece piece;
@@ -61,7 +60,6 @@ public abstract class Tile {
         }
         // TODO finish toString method after alliance stuff is done
     }
-
 
 
     public static final class EmptyTile extends Tile{
