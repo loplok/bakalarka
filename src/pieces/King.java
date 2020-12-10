@@ -20,4 +20,8 @@ public class King extends Piece{
         this.canKingSideCastle = false;
     }
 
+    @Override
+    public String toString() {
+        return PieceType.KING.toString();
+    }
 }
