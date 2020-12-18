@@ -20,6 +20,22 @@ public class King extends Piece{
         this.canKingSideCastle = false;
     }
 
+    public boolean isCastled() {
+        return this.isCastled;
+    }
+
+    private static boolean isFirstColumnExclusion(final int currentPosition, final int candidateOffset) {
+        return BoardConstants.FIRST_COLUMN[currentPosition] && (candidateOffset == -9 || candidateOffset == -1 ||
+                candidateOffset == 7);
+    }
+
+    private static boolean  isEightColumnExclusion(final int currentPosition, final int candidateOffset) {
+        return BoardConstants.EIGHT_COLUMN[currentPosition] && (candidateOffset == 9 || candidateOffset == 1 ||
+                candidateOffset == -7);
+    }
+
+
+
     @Override
     public String toString() {
         return PieceType.KING.toString();

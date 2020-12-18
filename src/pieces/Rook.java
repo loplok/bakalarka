@@ -13,4 +13,12 @@ public class Rook extends Piece{
     public String toString() {
         return PieceType.ROOK.toString();
     }
+
+    private static boolean isFirstColumnExclusion(final int currentPosition, final int candidateOffset) {
+        return BoardConstants.FIRST_COLUMN[currentPosition] && (candidateOffset == -1);
+    }
+
+    private static boolean isEightColumnExclusion(final int currentPosition, final int candidateOffset) {
+        return BoardConstants.EIGHT_COLUMN[currentPosition] && (candidateOffset ==  1);
+    }
 }
